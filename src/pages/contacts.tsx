@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import Layout from "../components/Layout";
 
-const Index: FC = () => {
+const Contacts: FC = () => {
   return (
-		<Layout title="За нас">
+		<Layout title="Контакти">
 
 		</Layout>
   );
 };
 
-export default Index;
+export default Contacts;
