@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 const Index: FC = () => {
   return (
-		<Layout title="За нас">
+		<Layout title="Начало" selected="index">
 
 		</Layout>
   );
