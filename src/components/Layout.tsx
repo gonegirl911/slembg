@@ -1,42 +1,46 @@
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import React, { FC } from "react";
+import React, { FC, useEffect, useState } from "react";
+import Logo from "../assets/svg/logo_extended.svg";
 import "../styles/global.css";
+
+const pages = {
+	"/": "Начало",
+	"/services": "Дейности",
+	"/contacts": "Контакти",
+};
 
 interface LayoutProps {
   title: string;
-	selected: "index" | "services" | "contacts";
+	selected: keyof typeof pages;
 }
 
 const Layout: FC<LayoutProps> = ({ title, selected, children }) => {
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => setIsScrolled(window.scrollY > 0);
+		window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+	}, []);
+
 	return (
 		<>
 			<title>{`СЛЕМ - ${title}`}</title>
-			<nav className="flex p-3 sticky top-0 items-center border-b-2">
-				<Link to="/">
-					<StaticImage
-						alt="Logo"
-						src="../assets/logo.png"
-						className="w-16 m-3"
-					/>
-				</Link>
-				<ul className="flex p-6 gap-6 text-gray-500 text-lg">
-					<li className={`${selected == "index" && "text-primary-blue"}`}>
-						<Link to="/">
-							Начало
+			<nav className={`grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] items-center fixed top-0 left-0 w-full z-10 ${isScrolled && "bg-white drop-shadow-md"}`}>
+				<div className="mx-6 hidden sm:block">
+					<Link to="/">
+						<img src={Logo} alt="Logo" className="h-8" />
+					</Link>
+				</div>
+				<div className="justify-self-center flex my-3">
+					{Object.entries(pages).map(([path, title]) => (
+						<Link to={path} className={`flex px-4 py-2 rounded-md bg-opacity-5 ${path === selected && "bg-black"}`}>
+							{title}
 						</Link>
-					</li>
-					<li className={`${selected == "services" && "text-primary-blue"}`}>
-						<Link to="/services">
-							Услуги
-						</Link>
-					</li>
-					<li className={`${selected == "contacts" && "text-primary-blue"}`}>
-						<Link to="/contacts">
-							Контакти
-						</Link>
-					</li>
-				</ul>
+					))}
+				</div>
 			</nav>
 			<main>
 				{children}

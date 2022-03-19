@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 const Index: FC = () => {
   return (
-		<Layout title="Начало" selected="index">
+		<Layout title="Начало" selected="/">
 
 		</Layout>
   );

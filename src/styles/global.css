@@ -5,6 +5,10 @@
 @layer base {
 	@font-face {
 		font-family: "DinC";
-		src: url("../assets/DinC.ttf") format("truetype");
+		src: url("../assets/fonts/DinC.ttf") format("truetype");
+	}
+
+	* {
+		@apply text-primary-gray
 	}
 }
