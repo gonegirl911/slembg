@@ -11,7 +11,7 @@ interface ProfileProps {
 
 const Profile: FC<ProfileProps> = ({ name, phone, email, services }) => {
 	return (
-		<div className="flex flex-col gap-10 p-10 m-5 rounded-md bg-white">
+		<div className="flex flex-col gap-10 p-10 m-5 rounded-md bg-primary-white">
 			<h2 className="text-2xl">{name}</h2>
 			<div className="flex flex-col gap-2">
 				<h3 className="text-lg">Информация</h3>
