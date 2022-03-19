@@ -6,7 +6,7 @@ import Profile from "../components/Profile";
 const Contacts: FC = () => {
   return (
 		<Layout title="Контакти" selected="/contacts">
-			<div className="flex wide:flex-col justify-center relative min-h-[100vh]">
+			<div className="flex wide:flex-col justify-center relative min-h-screen">
 				<StaticImage
 					alt="Contacts background"
 					src="../assets/images/contacts.jpg"
