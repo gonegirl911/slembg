@@ -9,6 +9,10 @@
 	}
 
 	* {
+		@apply text-inherit
+	}
+
+	body {
 		@apply text-primary-gray
 	}
 }
