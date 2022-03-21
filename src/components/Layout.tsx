@@ -30,7 +30,7 @@ const Layout: FC<LayoutProps> = ({ title, selected, isDark, children }) => {
 	return (
 		<>
 			<title>{`СЛЕМ - ${title}`}</title>
-			<nav className={`grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] items-center fixed top-0 left-0 w-full z-10 ${textColor} ${isScrolled && bgColor}`}>
+			<nav className={`grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] items-center fixed top-0 left-0 w-full z-10 transition-all duration-100 ${textColor} ${isScrolled && bgColor}`}>
 				<div className="mx-6 hidden sm:flex">
 					<Link to="/">
 						<img src={Logo} alt="Logo" className="h-8" />
