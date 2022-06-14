@@ -19,6 +19,7 @@ module.exports = {
         theme_color: "#f3f4f6",
         display: "standalone",
         icon: "src/assets/svg/logo.svg",
+				theme_color_in_head: false,
       },
     },
   ],

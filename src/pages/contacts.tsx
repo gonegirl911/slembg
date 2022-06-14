@@ -5,12 +5,15 @@ import Profile from "../components/Profile";
 
 const Contacts: FC = () => {
   return (
-		<Layout title="Контакти" selected="/contacts">
-			<StaticImage
+		<Layout
+			path="/contacts"
+			title="Контакти"
+			image={<StaticImage
 				alt="Contacts background"
 				src="../assets/images/contacts.jpg"
 				className="absolute top-0 left-0 h-full -z-10"
-			/>
+			/>}
+		>
 			<div className="flex flex-row wide:flex-col justify-center min-h-screen">
 				<div className="flex flex-col wide:flex-row justify-evenly mt-16 wide:mt-0">
 					<Profile
