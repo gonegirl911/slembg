@@ -1,5 +1,5 @@
 import { Link } from "gatsby";
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, ReactNode, useEffect, useState } from "react";
 import Logo from "../assets/svg/logo_extended.svg";
 import "../styles/global.css";
 
@@ -12,8 +12,9 @@ const navigationTabs = {
 interface LayoutProps {
   path: string;
   title: string;
-  image?: React.ReactNode;
+  image?: ReactNode;
   isDark?: boolean;
+  children: ReactNode;
 }
 
 const Layout: FC<LayoutProps> = ({ path, title, image, isDark, children }) => {
