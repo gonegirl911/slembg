@@ -5,11 +5,11 @@ module.exports = {
     siteUrl: "https://www.slembg.eu",
   },
   plugins: [
-		"gatsby-plugin-postcss",
-		"gatsby-plugin-image",
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-		"gatsby-plugin-fontawesome-css",
-		{
+    "gatsby-plugin-fontawesome-css",
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "SLEM",
@@ -19,9 +19,9 @@ module.exports = {
         theme_color: "#f3f4f6",
         display: "standalone",
         icon: "src/assets/svg/logo.svg",
-				theme_color_in_head: false,
+        theme_color_in_head: false,
       },
     },
   ],
-	trailingSlash: "always",
+  trailingSlash: "always",
 };

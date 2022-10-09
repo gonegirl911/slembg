@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-	@font-face {
-		font-family: "DinC";
-		src: url("../assets/fonts/DinC.ttf") format("truetype");
-	}
+  @font-face {
+    font-family: "DinC";
+    src: url("../assets/fonts/DinC.ttf") format("truetype");
+  }
 
-	* {
-		@apply text-inherit
-	}
+  * {
+    @apply text-inherit;
+  }
 
-	body {
-		@apply text-primary-dark
-	}
+  body {
+    @apply text-primary-dark;
+  }
 }
