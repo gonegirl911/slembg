@@ -10,7 +10,7 @@ module.exports = {
       options: {
         name: "SLEM",
         short_name: "SLEM",
-        start_url: "/contacts/",
+        start_url: "/",
         background_color: "#f3f4f6",
         theme_color: "#f3f4f6",
         display: "standalone",
