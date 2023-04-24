@@ -9,8 +9,8 @@ const Contacts: FC = () => (
     path="/contacts"
     image={
       <StaticImage
-        alt="Contacts background"
         src="../assets/images/contacts.jpg"
+        alt="Contacts background"
         className="absolute top-0 left-0 h-full -z-10"
       />
     }

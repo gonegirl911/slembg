@@ -8,8 +8,8 @@ const NotFound: FC = () => (
     path="/404"
     image={
       <StaticImage
-        alt="404 background"
         src="../assets/images/404.jpg"
+        alt="404 background"
         className="absolute top-0 left-0 h-full -z-10"
       />
     }
