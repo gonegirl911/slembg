@@ -7,6 +7,8 @@ const Services: FC = () => (
   </Layout>
 );
 
-export const Head: FC = () => <Seo title="Дейности" desc="Дейности" />;
+export const Head: FC = () => (
+  <Seo title="Дейности" desc="Дейности" shouldRedirect />
+);
 
 export default Services;

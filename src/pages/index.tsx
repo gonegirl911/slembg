@@ -7,6 +7,8 @@ const Index: FC = () => (
   </Layout>
 );
 
-export const Head: FC = () => <Seo title="Начало" desc="Начало" />;
+export const Head: FC = () => (
+  <Seo title="Начало" desc="Начало" shouldRedirect />
+);
 
 export default Index;
