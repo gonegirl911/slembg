@@ -35,5 +35,4 @@ module.exports = {
     },
     "gatsby-plugin-offline",
   ],
-  trailingSlash: "always",
 };

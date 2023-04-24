@@ -9,11 +9,13 @@
     font-display: swap;
   }
 
-  * {
-    @apply text-inherit;
+  html {
+    @apply overflow-hidden;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
-    @apply text-primary-dark;
+    @apply absolute top-0 right-0 bottom-0 left-0 text-primary-dark overflow-auto;
+    -webkit-overflow-scrolling: touch;
   }
 }

@@ -10,8 +10,8 @@ const Contacts: FC = () => (
     image={
       <StaticImage
         src="../assets/images/contacts.jpg"
-        alt="Contacts background"
-        className="absolute top-0 left-0 h-full -z-10"
+        alt="Телефони"
+        className="absolute top-0 left-0 h-full -z-10 text-transparent"
       />
     }
   >

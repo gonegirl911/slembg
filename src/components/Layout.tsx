@@ -20,9 +20,9 @@ const Layout: FC<LayoutProps> = ({ path, image, isDark, children }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(self.scrollY > 0);
-    self.addEventListener("scroll", handleScroll);
-    return () => self.removeEventListener("scroll", handleScroll);
+    const handleScroll = () => setIsScrolled(document.body.scrollTop > 0);
+    document.body.addEventListener("scroll", handleScroll);
+    return () => document.body.removeEventListener("scroll", handleScroll);
   }, []);
 
   const textColor = isDark ? "text-primary-light" : "text-primary-dark";
@@ -47,7 +47,7 @@ const Layout: FC<LayoutProps> = ({ path, image, isDark, children }) => {
             <Link
               to={to}
               key={title}
-              className={`flex px-4 py-2 rounded-md ${
+              className={`px-4 py-2 rounded-md ${
                 to === path && "bg-black bg-opacity-5"
               }`}
             >

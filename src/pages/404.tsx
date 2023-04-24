@@ -9,8 +9,8 @@ const NotFound: FC = () => (
     image={
       <StaticImage
         src="../assets/images/404.jpg"
-        alt="404 background"
-        className="absolute top-0 left-0 h-full -z-10"
+        alt="Тъжен робот"
+        className="absolute top-0 left-0 h-full -z-10 text-transparent"
       />
     }
     isDark
