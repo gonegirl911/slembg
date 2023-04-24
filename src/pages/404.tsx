@@ -22,6 +22,6 @@ const NotFound: FC = () => (
   </Layout>
 );
 
-export const Head: FC = () => <Seo title="404" desc="404" />;
+export const Head: FC = () => <Seo title="404" desc="404" isDark />;
 
 export default NotFound;
