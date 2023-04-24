@@ -39,7 +39,7 @@ const Layout: FC<LayoutProps> = ({ path, image, isDark, children }) => {
       >
         <div className="mx-6 hidden sm:flex">
           <Link to="/">
-            <img src={Logo} alt="logo" className="h-8" />
+            <img src={Logo} alt="Лого" className="h-8" />
           </Link>
         </div>
         <div className="justify-self-center flex my-3">
