@@ -1,11 +1,12 @@
 import React, { FC } from "react";
 import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 
-const Services: FC = () => {
-  return (
-    <Layout path="/services" title="Дейности">
-    </Layout>
-  );
-};
+const Services: FC = () => (
+  <Layout path="/services">
+  </Layout>
+);
+
+export const Head: FC = () => <Seo title="Дейности" desc="Дейности" />;
 
 export default Services;

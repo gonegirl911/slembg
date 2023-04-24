@@ -1,9 +1,5 @@
 /** @type {import("gatsby").GatsbyConfig} */
 module.exports = {
-  siteMetadata: {
-    title: "SLEM",
-    siteUrl: "https://www.slembg.eu",
-  },
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
@@ -14,14 +10,30 @@ module.exports = {
       options: {
         name: "SLEM",
         short_name: "SLEM",
-        start_url: "/",
+        start_url: "/contacts/",
         background_color: "#f3f4f6",
         theme_color: "#f3f4f6",
         display: "standalone",
         icon: "src/assets/svg/logo.svg",
+        icons: [
+          {
+            src: "src/assets/images/logo.png",
+            sizes: `196x196`,
+          },
+          {
+            src: "src/assets/images/maskable_logo.png",
+            sizes: `196x196`,
+            purpose: "maskable",
+          },
+          {
+            src: "src/assets/images/splash_logo.png",
+            sizes: `512x512`,
+          },
+        ],
         theme_color_in_head: false,
       },
     },
+    "gatsby-plugin-offline",
   ],
   trailingSlash: "always",
 };

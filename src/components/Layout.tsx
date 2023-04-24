@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React, { FC, ReactNode, useEffect, useState } from "react";
-import Logo from "../assets/svg/logo_extended.svg";
+import Logo from "../assets/svg/extended_logo.svg";
 import "../styles/global.css";
 
 const navigationTabs = {
@@ -11,22 +11,20 @@ const navigationTabs = {
 
 interface LayoutProps {
   path: string;
-  title: string;
   image?: ReactNode;
   isDark?: boolean;
   children: ReactNode;
 }
 
-const Layout: FC<LayoutProps> = ({ path, title, image, isDark, children }) => {
+const Layout: FC<LayoutProps> = ({ path, image, isDark, children }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 0);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const handleScroll = () => setIsScrolled(self.scrollY > 0);
+    self.addEventListener("scroll", handleScroll);
+    return () => self.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const themeColor = isDark ? "#2F3642" : "#f3f4f6";
   const textColor = isDark ? "text-primary-light" : "text-primary-dark";
   const bgColor = isDark
     ? "bg-primary-dark drop-shadow"
@@ -34,8 +32,6 @@ const Layout: FC<LayoutProps> = ({ path, title, image, isDark, children }) => {
 
   return (
     <>
-      <meta name="theme-color" content={themeColor} />
-      <title>{`СЛЕМ - ${title}`}</title>
       <nav
         className={`grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] items-center fixed top-0 left-0 w-full z-10 ${textColor} ${
           isScrolled && bgColor
@@ -43,7 +39,7 @@ const Layout: FC<LayoutProps> = ({ path, title, image, isDark, children }) => {
       >
         <div className="mx-6 hidden sm:flex">
           <Link to="/">
-            <img src={Logo} alt="Logo" className="h-8" />
+            <img src={Logo} alt="logo" className="h-8" />
           </Link>
         </div>
         <div className="justify-self-center flex my-3">
