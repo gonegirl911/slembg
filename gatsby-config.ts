@@ -1,5 +1,6 @@
-/** @type {import("gatsby").GatsbyConfig} */
-module.exports = {
+import { GatsbyConfig } from "gatsby";
+
+export default {
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
@@ -35,4 +36,4 @@ module.exports = {
     },
     "gatsby-plugin-offline",
   ],
-};
+} satisfies GatsbyConfig;

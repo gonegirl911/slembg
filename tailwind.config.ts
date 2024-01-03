@@ -1,7 +1,7 @@
-module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+import { Config } from "tailwindcss"
+
+export default {
+  content: ["src/**/*.tsx"],
   theme: {
     extend: {
       colors: {
@@ -13,9 +13,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["DinC", "sans-serif"],
+      sans: ["DinC"],
     },
   },
-  plugins: [],
   important: true,
-};
+} satisfies Config;

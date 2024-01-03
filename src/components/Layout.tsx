@@ -3,17 +3,17 @@ import React, { FC, ReactNode, useEffect, useState } from "react";
 import Logo from "../assets/svg/extended_logo.svg";
 import "../styles/global.css";
 
-const navigationTabs = {
+export const navigationTabs = {
   "/": "Начало",
   "/services": "Дейности",
   "/contacts": "Контакти",
 } as const;
 
 interface LayoutProps {
-  path: string;
+  path: keyof typeof navigationTabs | "/404";
   image?: ReactNode;
   isDark?: boolean;
-  children: ReactNode;
+  children?: ReactNode | undefined;
 }
 
 const Layout: FC<LayoutProps> = ({ path, image, isDark, children }) => {

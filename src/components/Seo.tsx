@@ -1,7 +1,8 @@
 import React, { FC } from "react";
+import { navigationTabs } from "./Layout";
 
 interface SeoProps {
-  title: string;
+  title: (typeof navigationTabs)[keyof typeof navigationTabs] | "404";
   desc: string;
   isDark?: boolean;
   shouldRedirect?: boolean;
