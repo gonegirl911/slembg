@@ -19,16 +19,16 @@ export default {
         icons: [
           {
             src: "assets/images/logo.png",
-            sizes: `196x196`,
+            sizes: "196x196",
           },
           {
             src: "assets/images/maskable_logo.png",
-            sizes: `196x196`,
+            sizes: "196x196",
             purpose: "maskable",
           },
           {
             src: "assets/images/splash_logo.png",
-            sizes: `512x512`,
+            sizes: "512x512",
           },
         ],
         theme_color_in_head: false,
