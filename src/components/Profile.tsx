@@ -28,7 +28,9 @@ const Profile: FC<ProfileProps> = ({ name, phone, email, services }) => (
     <div className="flex flex-col gap-2">
       <h3 className="text-lg">Дейности</h3>
       <ul className="flex flex-col gap-2 pl-4 list-disc">
-        {services.map((service) => <li key={service}>{service}</li>)}
+        {services.map((service) => (
+          <li key={service}>{service}</li>
+        ))}
       </ul>
     </div>
   </div>

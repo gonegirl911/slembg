@@ -15,19 +15,19 @@ export default {
         background_color: "#f3f4f6",
         theme_color: "#f3f4f6",
         display: "standalone",
-        icon: "src/assets/svg/logo.svg",
+        icon: "assets/svg/logo.svg",
         icons: [
           {
-            src: "src/assets/images/logo.png",
+            src: "assets/images/logo.png",
             sizes: `196x196`,
           },
           {
-            src: "src/assets/images/maskable_logo.png",
+            src: "assets/images/maskable_logo.png",
             sizes: `196x196`,
             purpose: "maskable",
           },
           {
-            src: "src/assets/images/splash_logo.png",
+            src: "assets/images/splash_logo.png",
             sizes: `512x512`,
           },
         ],

@@ -9,7 +9,7 @@ const Contacts: FC = () => (
     path="/contacts"
     image={
       <StaticImage
-        src="../assets/images/contacts.jpg"
+        src="../../assets/images/contacts.jpg"
         alt="Телефони"
         className="absolute top-0 left-0 h-full -z-10 text-transparent"
       />

@@ -1,4 +1,4 @@
-import { Config } from "tailwindcss"
+import { Config } from "tailwindcss";
 
 export default {
   content: ["src/**/*.tsx"],
@@ -13,7 +13,7 @@ export default {
       },
     },
     fontFamily: {
-      sans: ["DinC"],
+      sans: ["DinC", "sans-serif"],
     },
   },
   important: true,

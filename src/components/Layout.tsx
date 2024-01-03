@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React, { FC, ReactNode, useEffect, useState } from "react";
-import Logo from "../assets/svg/extended_logo.svg";
+import Logo from "../../assets/svg/extended_logo.svg";
 import "../styles/global.css";
 
 export const navigationTabs = {
