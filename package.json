@@ -1,6 +1,4 @@
 {
-  "name": "slembg",
-  "version": "1.0.0",
   "scripts": {
     "start": "gatsby develop",
     "build": "tsc && gatsby build",
