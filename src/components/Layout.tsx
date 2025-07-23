@@ -26,7 +26,6 @@ const Layout: FC<LayoutProps> = ({ path, image, isDark, children }) => {
   }, []);
 
   const textColor = isDark ? "text-primary-light" : "text-primary-dark";
-
   const bgColor = isDark
     ? "bg-primary-dark drop-shadow"
     : "bg-primary-light drop-shadow";
