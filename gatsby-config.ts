@@ -5,7 +5,6 @@ export default {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-plugin-fontawesome-css",
     {
       resolve: "gatsby-plugin-manifest",
       options: {

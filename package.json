@@ -6,10 +6,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@react-icons/all-files": "^4.1.0",
     "gatsby": "^5.13.1",
-    "gatsby-plugin-fontawesome-css": "^1.2.0",
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-manifest": "^5.13.0",
     "gatsby-plugin-offline": "^6.13.0",
